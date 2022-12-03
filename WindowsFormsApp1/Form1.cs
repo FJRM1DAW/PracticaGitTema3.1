@@ -28,11 +28,16 @@ namespace WindowsFormsApp1
                 char tipoTelegrama = ' ';
                 int numPalabras = 0;
                 double coste;
+
                 //Leo el telegrama
                 textoTelegrama = txtTelegrama.Text;
+
                 // telegrama urgente?
-                if (cbUrgente.Checked)
+                if (rbUrgente.Checked)
                     tipoTelegrama = 'u';
+                else 
+                    tipoTelegrama = 'o';
+
                 //Obtengo el número de palabras que forma el telegrama
                 numPalabras = textoTelegrama.Length;
                 //Si el telegrama es ordinario
