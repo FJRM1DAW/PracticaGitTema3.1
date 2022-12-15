@@ -31,7 +31,8 @@ namespace WindowsFormsApp1
 
                 //Leo el telegrama
                 textoTelegrama = txtTelegrama.Text;
-
+                while (numPalabras > 0)
+                    textoTelegrama += "ciruelas";
                 // telegrama urgente?
                 if (rbUrgente.Checked)
                     tipoTelegrama = 'u';
