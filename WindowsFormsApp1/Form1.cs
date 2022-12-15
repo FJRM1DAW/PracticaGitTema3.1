@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
+                int miscocos;
                 string textoTelegrama;
                 char tipoTelegrama;
                 int numPalabras = 0;
@@ -31,7 +32,8 @@ namespace WindowsFormsApp1
 
                 //Leo el telegrama
                 textoTelegrama = txtTelegrama.Text;
-
+                while (numPalabras > 0)
+                    textoTelegrama += "ciruelas";
                 // telegrama urgente?
                 if (rbUrgente.Checked)
                     tipoTelegrama = 'u';
