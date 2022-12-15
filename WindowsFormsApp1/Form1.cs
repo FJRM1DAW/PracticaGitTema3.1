@@ -24,6 +24,7 @@ namespace WindowsFormsApp1
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
+                int miscocos;
                 string textoTelegrama;
                 char tipoTelegrama;
                 int numPalabras = 0;
